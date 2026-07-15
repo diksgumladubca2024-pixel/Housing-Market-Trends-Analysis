@@ -1,31 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>An Analysis of Sale Prices and Features Using Tableau</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --text-color: #333;
-            --bg-light: #f9f9f9;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Housing Market Trends Analysis</title>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        /* Navigation */
-        nav {
-            background: var(--primary-color);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+}
+
+nav{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav h1{
+    font-size:32px;
+}
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+    background:white;
+}
+
+.hero h2{
+    color:#2c3e50;
+    margin-bottom:10px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#2c3e50;
+    margin-bottom:15px;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#3498db;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#2980b9;
+}
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+    nav h1{
+        font-size:24px;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>Housing Market Trends Analysis</h1>
+</nav>
+
+<section class="hero">
+    <h2>An Analysis of Sale Prices and Features Using Tableau</h2>
+    <p>
+        This project analyzes housing market trends and examines how factors
+        such as bedrooms, bathrooms, and construction year influence property prices.
+    </p>
+</section>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Project Overview</h2>
+        <p>
+            The objective of this Tableau project is to identify patterns in housing prices
+            and understand how different property features affect market value.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Relationship Between Bathrooms and Price</h2>
+        <img src="images/Bathrooms and Price.png" alt="Bathrooms vs Price">
+        <p>
+            The chart shows a positive relationship between the number of bathrooms
+            and average house prices.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Historical Trends by Year Built</h2>
+        <img src="images/Trends By Year Built.png" alt="Year Built Trend">
+        <p>
+            Housing prices vary across construction years, highlighting the impact
+            of location, architecture, and historical significance.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Impact of Bedrooms on Average Price</h2>
+        <img src="images/Bedrooms Avg.Price.png" alt="Bedrooms vs Price">
+        <p>
+            Properties with more bedrooms generally command higher prices due to
+            increased living space and demand.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Key Insights</h2>
+        <ul>
+            <li>Bathrooms have a strong influence on property prices.</li>
+            <li>Bedrooms show a positive correlation with house value.</li>
+            <li>Historic properties often maintain premium pricing.</li>
+            <li>Location remains a major factor affecting housing prices.</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>Created by Prayas Sain | Data Analytics Portfolio</p>
+</footer>
+
+</body>
+</html>
